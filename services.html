@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags (SEO) -->
+  <title>Digital Services & Pricing | Web Development, Apps & Automation | Digital Escalations</title>
+  <meta name="title" content="Digital Services & Pricing | Web Development, Apps & Automation | Digital Escalations">
+  <meta name="description" content="Explore digital agency services by Digital Escalations in Cape Town: starter to e-commerce websites, maintenance, workflow automation, and custom graphic design.">
+  <meta name="keywords" content="web development pricing, website maintenance packages, business automation services, graphic design quotes, mobile app development">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://digitalescalation.netlify.app/services.html">
+  <meta property="og:title" content="Digital Services & Pricing | Digital Escalations">
+  <meta property="og:description" content="Transparent pricing for web development, maintenance, automation, custom graphic design, and tech consultation.">
+  <meta property="og:image" content="https://digitalescalation.netlify.app/digital-escalations-logo.jpeg">
+
+  <!-- Twitter Card -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://digitalescalation.netlify.app/services.html">
+  <meta property="twitter:title" content="Digital Services & Pricing | Digital Escalations">
+  <meta property="twitter:description" content="Transparent pricing for web development, maintenance, automation, custom graphic design, and tech consultation.">
+  <meta property="twitter:image" content="https://digitalescalation.netlify.app/digital-escalations-logo.jpeg">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://digitalescalation.netlify.app/services.html">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <div>
+        <strong>Digital Escalations</strong>
+      </div>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="services" class="section">
+
+      <h1>Our Digital Agency Services</h1>
+
+      <p class="services-intro">
+        Digital Escalations provides modern digital solutions designed to help businesses establish, automate, and grow their digital presence.
+      </p>
+
+      <!-- Category 1: Website Development -->
+      <h2>Website Development</h2>
+
+      <div class="card-container">
+        <div class="card">
+          <h3>Starter Business Website</h3>
+          <h5>R2,499</h5>
+          <p>Perfect for startups and small businesses looking to create a professional online presence.</p>
+          <button class="booking-btn" onclick="toggleBookingForm(this, 'Starter Business Website (R2,499)')">Book Service</button>
+        </div>
+
+        <div class="card">
+          <h3>Business Growth Website</h3>
+          <h5>R4,999</h5>
+          <p>A professional multi-page website built to generate enquiries, strengthen your brand, and support business growth.</p>
+          <button class="booking-btn" onclick="toggleBookingForm(this, 'Business Growth Website (R4,999)')">Book Service</button>
+        </div>
+
+        <div class="card">
+          <h3>E-Commerce Website</h3>
+          <h5>From R7,999</h5>
+          <p>Complete online store solutions allowing businesses to showcase products and sell online efficiently.</p>
+          <button class="booking-btn" onclick="toggleBookingForm(this, 'E-Commerce Website (From R7,999)')">Book Service</button>
+        </div>
+      </div>
+
+      <!-- Category 2: Website Maintenance -->
+      <h2>Website Maintenance</h2>
+
+      <div class="card-container">
+        <div class="card">
+          <h3>Basic Maintenance</h3>
+          <h5>R399/month</h5>
+          <p>Regular updates, backups, and minor changes to keep your website active and secure.</p>
+          <button class="booking-btn" onclick="toggleBookingForm(this, 'Basic Maintenance (R399/mo)')">Book Service</button>
+        </div>
+
+        <div class="card">
+          <h3>Business Maintenance</h3>
+          <h5>R449/month</h5>
+          <p>Includes updates, monitoring, analytics reporting, and ongoing website support.</p>
+          <button class="booking-btn" onclick="toggleBookingForm(this, 'Business Maintenance (R449/mo)')">Book Service</button>
+        </div>
+
+        <div class="card">
+          <h3>Premium Maintenance</h3>
+          <h5>R699/month</h5>
+          <p>Priority support, monthly improvements, monitoring, and enhanced maintenance.</p>
+          <button class="booking-btn" onclick="toggleBookingForm(this, 'Premium Maintenance (R699/mo)')">Book Service</button>
+        </div>
+      </div>
+
+      <!-- Category 3: Business Automation -->
+      <h2>Business Automation</h2>
+
+      <div class="card-container">
+        <div class="card">
+          <h3>Lead Capture Automation</h3>
+          <h5>From R2,499</h5>
+          <p>Automate customer enquiries and lead collection processes to improve efficiency.</p>
+          <button class="booking-btn" onclick="toggleBookingForm(this, 'Lead Capture Automation (From R2,499)')">Book Service</button>
+        </div>
+
+        <div class="card">
+          <h3>Workflow Automation</h3>
+          <h5>From R4,999</h5>
+          <p>Streamline repetitive operational tasks and modernise business workflows.</p>
+          <button class="booking-btn" onclick="toggleBookingForm(this, 'Workflow Automation (From R4,999)')">Book Service</button>
+        </div>
+      </div>
+
+      <!-- Category 4: Graphic & Brand Design -->
+      <h2>Graphic & Brand Design</h2>
+
+      <div class="card-container">
+        <div class="card">
+          <h3>Custom Graphic Design</h3>
+          <h5>Custom Quotes Issued</h5>
+          <p>Professional design services including brand logos, social media assets, marketing materials, and custom digital graphics tailored to your brand.</p>
+          <button class="booking-btn" onclick="toggleBookingForm(this, 'Custom Graphic Design')">Book Service</button>
+        </div>
+      </div>
+
+      <!-- Reusable Dropdown Form Template -->
+      <div id="bookingDropdownTemplate" class="booking-dropdown">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="1ebb1323-62b3-4f00-bf92-0abb3aad9b5a">
+          <input type="hidden" name="subject" value="New Service Booking Request - Digital Escalations">
+          <input type="hidden" name="selected_service" class="selected-service-input" value="">
+
+          <h4>Request Service: <span class="service-title-display"></span></h4>
+
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="tel" name="phone" placeholder="Your Phone Number" pattern="[0-9]{10}" required>
+          <textarea name="message" rows="3" placeholder="Additional notes or project details..." required></textarea>
+
+          <button type="submit" class="booking-btn">Submit Order Request</button>
+        </form>
+      </div>
+
+      <!-- PDF Download CTA -->
+      <div class="download-container">
+        <p class="download-text">
+          Download our payment instructions below:
+        </p>
+        <a href="Digital Escalations EFT Instructions.pdf" class="download-btn" download>
+          Download Payment Instructions (PDF)
+        </a>
+      </div>
+
+      <!-- Page CTA Link -->
+      <div class="cta-container">
+        <a href="contact.html" class="button-link">
+          Contact Us Today
+        </a>
+      </div>
+
+      <!--Testimonial sections-->
+
+
+
+    </section>
+
+    <section id="reviews" class="reviews-section">
+  <h2>What Our Clients Say</h2>
+  
+  <!-- Mockup Customer Reviews -->
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="review-header">
+        <strong>Sipho Dlamini</strong>
+        <div class="stars">★★★★★</div>
+      </div>
+      <p class="review-text">
+        Digital Escalations transformed our online storefront! The E-Commerce package was delivered on time and our sales increased significantly within the first 4 months.
+      </p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <strong>Anika van der Merwe</strong>
+        <div class="stars">★★★★★</div>
+      </div>
+      <p class="review-text">
+        The workflow automation saved us at least 10 hours a week in client intake. Super efficient and highly professional team in Cape Town!
+      </p>
+    </div>
+
+    <div class="review-card">
+      <div class="review-header">
+        <strong>Jason Miller</strong>
+        <div class="stars">★★★★☆</div>
+      </div>
+      <p class="review-text">
+        Great experience with their website maintenance package. Any update or backup request is handled swiftly without downtime.
+      </p>
+    </div>
+  </div>
+
+  <!-- Review Submission Form -->
+  <div class="review-form-container">
+    <h3>Leave a Review</h3>
+    <form action="https://api.web3forms.com/submit" method="POST" class="review-form">
+      <input type="hidden" name="access_key" value="1ebb1323-62b3-4f00-bf92-0abb3aad9b5a">
+      <input type="hidden" name="subject" value="New Customer Review Submission - Digital Escalations">
+
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+
+      <div class="rating-picker">
+        <label>Your Rating:</label>
+        <div class="star-rating">
+          <input type="radio" id="star5" name="rating" value="5 Stars" required><label for="star5" title="5 stars">★</label>
+          <input type="radio" id="star4" name="rating" value="4 Stars"><label for="star4" title="4 stars">★</label>
+          <input type="radio" id="star3" name="rating" value="3 Stars"><label for="star3" title="3 stars">★</label>
+          <input type="radio" id="star2" name="rating" value="2 Stars"><label for="star2" title="2 stars">★</label>
+          <input type="radio" id="star1" name="rating" value="1 Star"><label for="star1" title="1 star">★</label>
+        </div>
+      </div>
+
+      <textarea 
+        name="review_message" 
+        rows="4" 
+        maxlength="300" 
+        placeholder="Write your review here (up to 300 characters)..." 
+        required 
+        oninput="updateCharCount(this)"></textarea>
+      
+      <div class="char-count-wrapper">
+        <span id="charCounter">300 characters remaining</span>
+      </div>
+
+      <button type="submit" class="booking-btn">Submit Review</button>
+    </form>
+  </div>
+</section>
+
+  </main>
+
+  <!-- Interactive Dropdown Script -->
+  <script>
+    function toggleBookingForm(buttonElement, serviceName) {
+      const card = buttonElement.closest('.card');
+      let existingDropdown = card.querySelector('.booking-dropdown');
+
+      if (existingDropdown) {
+        existingDropdown.classList.toggle('active');
+      } else {
+        // Close any currently active booking forms on other cards
+        document.querySelectorAll('.card .booking-dropdown').forEach(el => el.classList.remove('active'));
+
+        // Clone the template form
+        const template = document.getElementById('bookingDropdownTemplate');
+        const newForm = template.cloneNode(true);
+        newForm.removeAttribute('id');
+
+        // Set heading & hidden input for Web3Forms email notification
+        newForm.querySelector('.service-title-display').textContent = serviceName;
+        newForm.querySelector('.selected-service-input').value = serviceName;
+
+        // Append to current card and activate
+        card.appendChild(newForm);
+        newForm.classList.add('active');
+      }
+    }
+  </script>
+<script>
+function updateCharCount(textareaElement) {
+  const maxLength = 300;
+  const remaining = maxLength - textareaElement.value.length;
+  const counterElement = document.getElementById('charCounter');
+  counterElement.textContent = `${remaining} characters remaining`;
+}
+</script>
+</body>
+</html>
